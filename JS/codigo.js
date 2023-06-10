@@ -1,0 +1,55 @@
+const contenedorCertificados=document.getElementById('lista-certificados')
+const contenedorProyectos=document.getElementById('cont-proyectos')
+let listaCertificados=[]
+let listaProyectos=[]
+
+// Clase para los certificados
+class Certificado{
+    constructor(nombre,ubicacion){
+        this.nombre=nombre
+        this.ubicacion=ubicacion
+    }
+}
+// Clase para los proyectos
+class Proyecto{
+    constructor(nombre,imagen,descripcion,urlRepo,urlApp){
+    this.nombre=nombre
+    this.imagen=imagen
+    this.descripcion=descripcion
+    this.urlRepo=urlRepo
+    this.urlApp=urlApp
+    }    
+}
+// Se adicionan nuevos objetos certificados
+let certificadoJavascript=new Certificado('Javascript','CERTIFICADOS/diploma-basico-javascript.pdf')
+let certificadoHtml5=new Certificado('Html','CERTIFICADOS/diploma-mobile-first.pdf')
+let git=new Certificado('Git','CERTIFICADOS/diploma-git-github.pdf')
+let python=new Certificado('Python','CERTIFICADOS/diploma-python-basico.pdf')
+listaCertificados.push(certificadoJavascript,certificadoHtml5,git,python)
+
+// Se adicionan nuevos proyectos
+let proyectoBata=new Proyecto('BATABIT','PICTURES/logoBatabit.svg','Desarrollo con HTML y CSS',' ',' ')
+let proyectoFood=new Proyecto('BEST FOOD','PICTURES/food.png','Desarrollo con HTML y CSS',' ',' ')
+listaProyectos.push(proyectoBata,proyectoFood)
+
+
+// Se injecta en el html los certificados
+listaCertificados.forEach((certificado)=>{
+    lista=`<a href=${certificado.ubicacion} alt="Descargar certificado"><div><u>${certificado.nombre}</u><p>certificado ⬇</p></div></a>`
+    contenedorCertificados.innerHTML+=lista
+})
+
+// Se injecta en el html los proyectos
+listaProyectos.forEach((proyecto)=>{
+tarjetaProyecto=`<div class="tarjeta-proyectos">
+<figure>
+    <img src=${proyecto.imagen} alt=${proyecto.nombre}>
+    <figcaption>${proyecto.nombre}</figcaption>
+</figure>
+<P>${proyecto.descripcion}</P>
+<a href=${proyecto.urlRepo} class="enlace-repo">Repositorio</a>
+<a href=${proyecto.urlApp} class="enlace-page">Page</a>
+</div>`
+contenedorProyectos.innerHTML+=tarjetaProyecto
+})
+
