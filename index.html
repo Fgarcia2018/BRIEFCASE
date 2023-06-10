@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PORTAFOLIO</title>
     <link rel="stylesheet" href="CSS/styles..css">
     <link rel="stylesheet" href="CSS/tablet.css" media="screen and (min-width:600px)">
     <link rel="stylesheet" href="CSS/desktop.css" media="screen and (min-width:800px)">
@@ -12,43 +12,78 @@
 </head>
 <body>
     <header>
-        <h1>Fernando García</h1>
-        <h4>Desarrollador Web</h4>
+        <h1>PORTAFOLIO 2023</h1>
+        <h3>Fernando García -  Desarrollador Web</h3>
         <nav class="nav">
-            <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>About me</li>
-                <li>Certificates</li>
+            <ul>             
+                <a href="#sobre-mi"><li>Sobre mí</li></a>
+                <a href="#tecnologias"><li>tecnologías</li></a>
+                <a href="#proyectos"><li>Proyectos</li></a>               
+                <a href="#contacto"><li>Contacto</li></a>
             </ul>
         </nav>
-
+ 
     </header>
     <main>
-        <section>
-            <div class="Description_profile">
+        <section class="section-main">            
+            <div id="sobre-mi" class="subtitulos">
                 <h2>
-                    La Web
-                </h2>               
+                    SOBRE MÍ
+                </h2>  
+            </div> 
+            <div class="Description_profile">                     
+                    <P>
+                        Tecnólogo en Sistemas graduado del Centro Colombiano De Estudios Profesionales, me especializo en desarrollo de Web apps,
+                        Landing Pages, aplicando Responsive Design. Me gusta aprender constantemente sobre las nuevas tecnologías y enfrentar nuevos retos. Enfoncado y apasionado por conseguir la metas propuestas.                    
+                    </P>           
+            </div>                        
+        </section> 
+        <section class="section-main">
+            <div id="tecnologias" class="subtitulos">
+                <h2>
+                    LENGUAJES Y TECNOLOGÍAS 
+                </h2>
             </div>
-           
-           
-                        
-        </section>
-        
-        <aside>
-            <a href="../BATA_BIT/index.html"><div class="tecnologias"><img src="PICTURES/logoBatabit.svg" alt=""></div></a>
-            <div class="tecnologias">Probando GIT</div>
-            <div class="tecnologias">Otra Prueba de GIT</div>
-            <div class="tecnologias"></div>
-        
-        </aside>
-        
+            <section id="lista-certificados" class="contenedor-certificados">  
+            </section>        
+        </section>       
+        <section class="section-main">
+            <div id="proyectos" class="subtitulos">
+                <h2>
+                    PROYECTOS
+                </h2>
+            </div>
+            <section id="cont-proyectos" class="contenedor-proyectos">           
+                              
+             </section>        
+        </section>       
+        <section class="section-main">
+            <div id="contacto" class="subtitulos">
+                <h2>
+                    CONTACTO
+                </h2>
+            </div>
+            <section class="redes-contacto">
+                    <div class="footer-left" >
+                        <p>correo:andgarcia_24@hotmail.com</p>
+                        <p>teléfono:3177417153</p>
+                    </div>
+                    <div class="footer-right">                
+                        <figure>
+                            <img src="PICTURES/linkedin.png"  alt="Acceso a perfil Linkedin">
+                            <figcaption>Linkedin</figcaption>
+                        </figure>     
+                        <figure>
+                            <img src="PICTURES/whatsapp.png"  alt="Whatsapp">
+                            <figcaption>Whatsapp 3177417153</figcaption>
+                        </figure>     
+                    </div>                      
+            </section>    
+        </section>        
     </main>
     <footer>
-         &#169 Copyright 2023 
-        
+         &#169 Copyright 2023         
     </footer>
-    
+    <script src="JS/codigo.js"></script>    
 </body>
-</html>
+</html> 

@@ -1,12 +1,39 @@
-aside{   
-    width: 30%;
-    height: auto;  
-    order: 1;  
+header h1{
+    font-size: 4.5rem;
 }
-
-section{
-    height:auto;
-    width: 70%;  
-    order: 2; 
+.contenedor-proyectos{  
+   flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;   
+    justify-content: center;
+}
+.Description_profile{   
+    width: 100%;
+    height: auto;   
+    justify-content: center;
+    align-items: center;   
+    padding: 3vh 5vw 3vh 5vw;
+    margin-top: 15vh;
+    margin-bottom: 25vh;
     
 }
+.tarjeta-proyectos{  
+    width: 40vw;
+}
+.redes-contacto{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end
+}
+.footer-right{
+    display: flex;    
+}
+.footer-right figure{
+    margin-right: 5vw;
+}
+.footer-left p{
+    margin-left: 5vw;
+}
+
+

@@ -15,36 +15,55 @@ html{
     color: white;
     font-family: 'Inconsolata', monospace;    
 }
-
-
-body{
-    display: flex;
-    flex-wrap: wrap;    
+body{   
     background-color: var(--secundary-backcolor);
+    width: 100%;  
 }
-
 header{
         width: 100%;
-        height: 20vh; 
+        height: 100vh; 
         background: linear-gradient(207.8deg, aqua 0%, var(--primary-backcolor) 45%);
-        font-size: 1.6rem;
-        position: fixed;
+        font-size: 1.6rem;       
+        display: grid;
+        grid-template-columns: 70vw 30vw;
+        grid-template-rows: 50vh 50vh;        
+        grid-template-areas: "t1 t2"
+        "t1 t3";
+        align-items: center;
+        justify-items: end;
+}
+header h1,h3{
+    grid-area: t1;
+    padding-left: 12vw;
+}
+header h3{
+    margin-top: 20vh;
+}
+header .nav{   
+    right: 20px;
+    text-align: center;  
+    grid-area: t3;  
+    margin-top: 20vh;
+    width: 34vw;
+    margin: 52vw 6vw 10vw 10vw;
 }
 
-header .nav{
-    display: inline-block;
-    position: absolute;
-    right: 20px;
-    text-align: center;    
+header a{
+    text-decoration: none;
+    color: white;
 }
 
 .nav li{
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
     border-radius: 5px;
     border-style: solid;
     border-color: gray;
-    background-color: gray;      
+    background-color: gray;  
+    font-size: 2rem; 
+    margin-bottom: 2vw;
+    text-decoration: none;
+       
 }
 .nav li:hover{
     color: aqua;
@@ -55,74 +74,163 @@ main{
     width: 100%;
     min-width: 150px;
     height: auto;
-    background-color: rgb(55, 66, 62);
-    display: flex;    
-    flex-wrap: wrap;    
-    padding-top: 20vh;  
+    background-color: rgb(55, 66, 62);  
+    padding-top: 1vh;  
+}
+.section-main{   
+    width: 100%;
+    height: auto;
+    align-items: center;    
 }
 
-aside{   
-    width: 100%;
-    height: auto;    
-}
-
-section{
-    height:auto;
-    width: 100%;
-    padding: 10px;
-  
-    
-}
-.tecnologias{
+.contenedor-proyectos{
     display: flex;
-    height: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.tarjeta-proyectos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr;
+    grid-template-areas: "img img"
+    "img img"
+    "img img"
+    "desc desc"
+    "repo app";
+    height: 300px;
     border-radius: 5px;
     margin: 5px;      
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0,0,0.16);
- 
+    box-shadow: 0 4px 8px rgba(0, 0,0,0.16); 
+    width: 90vw;
+    justify-items: center;
+    padding-bottom: 2vh;
+    font-size: 1.5rem;
+
+}
+.tarjeta-proyectos figure{
+    grid-area: img;
+    text-align: center;    
+}
+.tarjeta-proyectos img{
+    width: 120px;    
+    height: 150px;
+    size: cover;
+}
+
+.tarjeta-proyectos p{
+    grid-area: desc;
+    justify-self: center;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    width:100%;
+    text-align: center;
+    border-top:1px solid aqua ;
+    border-radius: 5px;
+
+}
+.enlace-repo{
+    grid-area: repo;
+}
+.enlace-app{
+    grid-area: app;
+}
+
+.tarjeta-proyectos a{
+    text-decoration: none;
+    color: white;
+    justify-self: center;
+    border: 1px solid white;
+    margin-top: 2vh;
+    padding:0 10px 0 10px;
+}
+.tarjeta-proyectos a:hover{
+    cursor: pointer;     
+}
+.subtitulos{
+    margin-top: 10vh; 
+    text-align: center;
+    font-size: 2rem;
 }
 
 .Description_profile{
     display: flex;
-    background-image: url('../PICTURES/pc-small.jpg');
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 5vw 3vh 5vw;
+    margin-top: 3vh;
+    margin-bottom: 25vh;
 }
-
+.Description_profile p{
+    font-size: 1.6rem;
+    margin-top: 1vh;
+    width: 70vw;
+}
 .Description_profile img{
     width: 100%;
-    height: 100%;
-    
+    height: 100%;   
 }
-.Description_profile h2{
-  
-
+.tarjeta-proyectos:hover{
+    box-shadow: 0 4px 8px aqua;
 }
-
-
-.tecnologias:hover{
-    cursor: pointer;
-    /* border: solid;
-    border-color: aqua; */
-     box-shadow: 0 4px 8px aqua;
+.contenedor-certificados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
 }
-.aside a{
+.contenedor-certificados a{
     text-decoration: none;
-    width: 70%;
-    height: 50%;
-    
+    color: white;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 1vh;
+}
+.contenedor-certificados div{
+    text-align: center;
+    padding: 4px 10px;;
+}
+.contenedor-certificados p{
+    font-size: 1rem;
+}
+.contenedor-certificados a:hover{  
+    background-color: #1A6653;
 }
 
+.redes-contacto{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;  
+    justify-content: center;
+    align-items: center;
+}
 
+.redes-contacto div{
+    text-align: center;
+}
+.redes-contacto figure{
+    text-align: center;
+    margin-top: 5vh;
+}
+.redes-contacto img{
+    width: 30px;
+    height: 30px;
+}
 footer{
     width: 100%;
     height: 10vh;
     background-color: rgb(35, 45, 42);
     text-align: center;
+    font-size: 1.2rem;
 }
