@@ -1,6 +1,15 @@
 header h1{
     font-size: 4.5rem;
 }
+header .nav{
+    width: 470px;
+    margin: 2px 0px 42px 3px;
+    height: 1vh;
+}
+
+header .nav li{
+    margin-right: 10px;
+}
 .contenedor-proyectos{  
    flex-direction: row;
     flex-wrap: wrap;

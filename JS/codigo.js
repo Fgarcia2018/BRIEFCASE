@@ -29,13 +29,13 @@ listaCertificados.push(certificadoJavascript,certificadoHtml5,git,python)
 
 // Se adicionan nuevos proyectos
 let proyectoBata=new Proyecto('BATABIT','PICTURES/logoBatabit.svg','Desarrollo con HTML y CSS',' ',' ')
-let proyectoFood=new Proyecto('BEST FOOD','PICTURES/food.png','Desarrollo con HTML y CSS',' ',' ')
+let proyectoFood=new Proyecto('BEST FOOD','PICTURES/food.png','Desarrollo con HTML y CSS','https://github.com/Fgarcia2018/Restaurant.git','https://fgarcia2018.github.io/Restaurant/')
 listaProyectos.push(proyectoBata,proyectoFood)
 
 
 // Se injecta en el html los certificados
 listaCertificados.forEach((certificado)=>{
-    lista=`<a href=${certificado.ubicacion} alt="Descargar certificado"><div><u>${certificado.nombre}</u><p>certificado ⬇</p></div></a>`
+    lista=`<a href=${certificado.ubicacion} alt="Descargar certificado" target="_blank"><div><u>${certificado.nombre}</u><p>certificado ⬇</p></div></a>`
     contenedorCertificados.innerHTML+=lista
 })
 
@@ -47,8 +47,8 @@ tarjetaProyecto=`<div class="tarjeta-proyectos">
     <figcaption>${proyecto.nombre}</figcaption>
 </figure>
 <P>${proyecto.descripcion}</P>
-<a href=${proyecto.urlRepo} class="enlace-repo">Repositorio</a>
-<a href=${proyecto.urlApp} class="enlace-page">Page</a>
+<a href=${proyecto.urlRepo} class="enlace-repo" target="_blank">Repositorio</a>
+<a href=${proyecto.urlApp} class="enlace-page" target="_blank">Page</a>
 </div>`
 contenedorProyectos.innerHTML+=tarjetaProyecto
 })

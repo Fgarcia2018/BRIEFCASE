@@ -25,10 +25,10 @@ header{
         background: linear-gradient(207.8deg, aqua 0%, var(--primary-backcolor) 45%);
         font-size: 1.6rem;       
         display: grid;
-        grid-template-columns: 70vw 30vw;
+        grid-template-columns: 60vw 40vw;
         grid-template-rows: 50vh 50vh;        
         grid-template-areas: "t1 t2"
-        "t1 t3";
+        "t1 t3";    
         align-items: center;
         justify-items: end;
 }
@@ -44,8 +44,10 @@ header .nav{
     text-align: center;  
     grid-area: t3;  
     margin-top: 20vh;
-    width: 34vw;
-    margin: 52vw 6vw 10vw 10vw;
+    width: 130px;
+    margin: 164px 2px 2px 0px;
+    position: fixed;
+    align-self: end;
 }
 
 header a{
@@ -215,10 +217,17 @@ main{
     justify-content: center;
     align-items: center;
 }
-
 .redes-contacto div{
     text-align: center;
 }
+.footer-left a{
+     color:white;
+}
+.footer-right a{
+    text-decoration:none;
+    color:white;
+}
+
 .redes-contacto figure{
     text-align: center;
     margin-top: 5vh;
