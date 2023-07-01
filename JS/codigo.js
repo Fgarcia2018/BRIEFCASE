@@ -25,12 +25,16 @@ let certificadoJavascript=new Certificado('Javascript','CERTIFICADOS/diploma-bas
 let certificadoHtml5=new Certificado('Html','CERTIFICADOS/diploma-mobile-first.pdf')
 let git=new Certificado('Git','CERTIFICADOS/diploma-git-github.pdf')
 let python=new Certificado('Python','CERTIFICADOS/diploma-python-basico.pdf')
-listaCertificados.push(certificadoJavascript,certificadoHtml5,git,python)
+let certificadoJava=new Certificado('Java','CERTIFICADOS/950300515735CC16848773C.pdf')
+listaCertificados.push(certificadoJavascript,certificadoHtml5,git,python,certificadoJava)
 
 // Se adicionan nuevos proyectos
-let proyectoBata=new Proyecto('BATABIT','PICTURES/logoBatabit.svg','Desarrollo con HTML y CSS',' ',' ')
+let proyectoBata=new Proyecto('BATABIT','PICTURES/Batabit.png','Desarrollo con HTML y CSS',' ',' ')
 let proyectoFood=new Proyecto('BEST FOOD','PICTURES/food.png','Desarrollo con HTML y CSS','https://github.com/Fgarcia2018/Restaurant.git','https://fgarcia2018.github.io/Restaurant/')
-listaProyectos.push(proyectoBata,proyectoFood)
+let proyectoYard=new Proyecto('YARD SALE','PICTURES/yardsale.png','Desarrollo con HTML, CSS y JAVASCRIPT','https://github.com/Fgarcia2018/curso-frontend-developer-javascript','https://fgarcia2018.github.io/curso-frontend-developer-javascript/')
+
+
+listaProyectos.push(proyectoBata,proyectoFood,proyectoYard)
 
 
 // Se injecta en el html los certificados
