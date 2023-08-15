@@ -29,7 +29,7 @@ let certificadoHtml5=new Certificado('Html','CERTIFICADOS/diploma-mobile-first.p
 let git=new Certificado('Git','CERTIFICADOS/diploma-git-github.pdf');
 let python=new Certificado('Python','CERTIFICADOS/diploma-python-basico.pdf');
 let certificadoJava=new Certificado('Java','CERTIFICADOS/estructuras_control_java.pdf');
-let certificadoRedes=new Certificado('Redes y Seuridad','CERTIFICADOS/redes_seguridad.pdf');
+let certificadoRedes=new Certificado('Redes y Seguridad','CERTIFICADOS/redes_seguridad.pdf');
 let certificadoSeguridad=new Certificado('Seguridad Informática','CERTIFICADOS/seguridad_informatica.pdf');
 let certificadoCss=new Certificado('CSS','CERTIFICADOS/diploma-css-grid.pdf');
 listaCertificados.push(certificadoJavascript,certificadoEcmascript,certificadoApi,certificadoAsincronismo,certificadoHtml5,certificadoCss,git,python,certificadoJava,certificadoRedes,certificadoSeguridad);
