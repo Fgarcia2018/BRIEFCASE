@@ -29,7 +29,7 @@ let certificadoJava=new Certificado('Java','CERTIFICADOS/950300515735CC16848773C
 listaCertificados.push(certificadoJavascript,certificadoHtml5,git,python,certificadoJava)
 
 // Se adicionan nuevos proyectos
-let proyectoBata=new Proyecto('BATABIT','PICTURES/Batabit.png','Desarrollo con HTML y CSS',' ',' ')
+let proyectoBata=new Proyecto('WAREHOUSE','PICTURES/warehouse.png','Herramienta para control de inventarios, Desarrollo con HTML,CSS,JS,PHP','https://github.com/Fgarcia2018/warehouse.git ','http://fagm.epizy.com')
 let proyectoFood=new Proyecto('BEST FOOD','PICTURES/food.png','Desarrollo con HTML y CSS','https://github.com/Fgarcia2018/Restaurant.git','https://fgarcia2018.github.io/Restaurant/')
 let proyectoYard=new Proyecto('YARD SALE','PICTURES/yardsale.png','Desarrollo con HTML, CSS y JAVASCRIPT','https://github.com/Fgarcia2018/curso-frontend-developer-javascript','https://fgarcia2018.github.io/curso-frontend-developer-javascript/')
 
