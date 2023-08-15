@@ -57,8 +57,8 @@ tarjetaProyecto=`<div class="tarjeta-proyectos">
     <figcaption>${proyecto.nombre}</figcaption>
 </figure>
 <P>${proyecto.descripcion}</P>
-<a href=${proyecto.urlRepo} class="enlace-repo" target="_blank">Repositorio</a>
-<a href=${proyecto.urlApp} class="enlace-page" target="_blank">Page</a>
+<a href=${proyecto.urlRepo} class="enlace-repo" target="_blank">Ir a Repositorio</a>
+<a href=${proyecto.urlApp} class="enlace-page" target="_blank">visitar el sitio</a>
 </div>`
 contenedorProyectos.innerHTML+=tarjetaProyecto
 });
