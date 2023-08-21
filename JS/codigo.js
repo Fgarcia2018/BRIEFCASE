@@ -32,7 +32,8 @@ let certificadoJava=new Certificado('Java','CERTIFICADOS/estructuras_control_jav
 let certificadoRedes=new Certificado('Redes y Seguridad','CERTIFICADOS/redes_seguridad.pdf');
 let certificadoSeguridad=new Certificado('Seguridad Informática','CERTIFICADOS/seguridad_informatica.pdf');
 let certificadoCss=new Certificado('CSS','CERTIFICADOS/diploma-css-grid.pdf');
-listaCertificados.push(certificadoJavascript,certificadoEcmascript,certificadoApi,certificadoAsincronismo,certificadoHtml5,certificadoCss,git,python,certificadoJava,certificadoRedes,certificadoSeguridad);
+let certificadoSql=new Certificado('SQL','CERTIFICADOS/certificado-sql.pdf');
+listaCertificados.push(certificadoJavascript,certificadoEcmascript,certificadoApi,certificadoAsincronismo,certificadoHtml5,certificadoCss,git,python,certificadoJava,certificadoRedes,certificadoSeguridad,certificadoSql);
 
 // Se adicionan nuevos proyectos
 let proyectoBata=new Proyecto('WAREHOUSE','PICTURES/warehouse.png','Herramienta para control de inventarios, Desarrollo con HTML,CSS,JS,PHP','https://github.com/Fgarcia2018/warehouse.git ','http://fagm.epizy.com');
