@@ -43,7 +43,7 @@ let proyectoFood=new Proyecto('BEST FOOD','PICTURES/food.png','Desarrollo con HT
 let proyectoYard=new Proyecto('YARD SALE','PICTURES/yardsale.png','Desarrollo con HTML, CSS y JAVASCRIPT','https://github.com/Fgarcia2018/curso-frontend-developer-javascript','https://fgarcia2018.github.io/curso-frontend-developer-javascript/');
 
 
-listaProyectos.push(proyectoBata,proyectoFood,proyectoYard);
+listaProyectos.push(proyectoReact,proyectoBata,proyectoFood,proyectoYard);
 
 
 // Se injecta en el html los certificados
