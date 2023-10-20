@@ -37,6 +37,7 @@ let certificadoReact=new Certificado('REACT.JS','CERTIFICADOS/diploma-react-vite
 listaCertificados.push(certificadoJavascript,certificadoEcmascript,certificadoApi,certificadoAsincronismo,certificadoHtml5,certificadoCss,git,python,certificadoJava,certificadoRedes,certificadoSeguridad,certificadoSql,certificadoReact);
 
 // Se adicionan nuevos proyectos
+let proyectoReact=new Proyecto('REGOT-APP','PICTURES/ots_app','Herramienta para registro de consumos de material en obra, Desarrollo con REACT.JS','https://github.com/Fgarcia2018/OTS_APP.git ','https://fgarcia2018.github.io/OTS_APP/');
 let proyectoBata=new Proyecto('WAREHOUSE','PICTURES/warehouse.png','Herramienta para control de inventarios, Desarrollo con HTML,CSS,JS,PHP','https://github.com/Fgarcia2018/warehouse.git ','http://fagm.epizy.com');
 let proyectoFood=new Proyecto('BEST FOOD','PICTURES/food.png','Desarrollo con HTML y CSS','https://github.com/Fgarcia2018/Restaurant.git','https://fgarcia2018.github.io/Restaurant/');
 let proyectoYard=new Proyecto('YARD SALE','PICTURES/yardsale.png','Desarrollo con HTML, CSS y JAVASCRIPT','https://github.com/Fgarcia2018/curso-frontend-developer-javascript','https://fgarcia2018.github.io/curso-frontend-developer-javascript/');
