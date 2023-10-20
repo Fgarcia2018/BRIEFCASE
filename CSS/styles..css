@@ -121,7 +121,7 @@ main{
 .tarjeta-proyectos img{
     width: 300px;    
     height: 500px;
-    size: cover;
+    object-fit:contain
 }
 
 .tarjeta-proyectos p{
