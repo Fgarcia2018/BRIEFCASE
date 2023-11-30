@@ -1,18 +1,30 @@
+// MANIPULACION DEL DOM
 const contenedorCertificados=document.getElementById('lista-certificados');
 const contenedorProyectos=document.getElementById('cont-proyectos');
+
+// DECLARACIÓN DE LISTAS
 let listaCertificados=[];
 let listaProyectos=[];
 
-// Clase para los certificados
+// PROTOTIPO CERTIFICADO
 class Certificado{
-    constructor(nombre,ubicacion){
+    constructor({
+        nombre,
+        ubicacion
+    }){
         this.nombre=nombre;
         this.ubicacion=ubicacion;
     }
 }
-// Clase para los proyectos
+// PROTOTIPO PROYECTO
 class Proyecto{
-    constructor(nombre,imagen,descripcion,urlRepo,urlApp){
+    constructor({
+        nombre,
+        imagen,
+        descripcion,
+        urlRepo,
+        urlApp
+    }){
     this.nombre=nombre;
     this.imagen=imagen;
     this.descripcion=descripcion;
@@ -20,39 +32,124 @@ class Proyecto{
     this.urlApp=urlApp;
     }    
 }
-// Se adicionan nuevos objetos certificados
-let certificadoJavascript=new Certificado('Javascript','CERTIFICADOS/diploma-basico-javascript.pdf');
-let certificadoEcmascript=new Certificado('Ecmascript','CERTIFICADOS/diploma-ecmascript-6.pdf');
-let certificadoApi=new Certificado('Consumo API REST','CERTIFICADOS/diploma-api.pdf');
-let certificadoAsincronismo=new Certificado('Asincronismo con JS','CERTIFICADOS/diploma-asincronismo-js.pdf');
-let certificadoHtml5=new Certificado('Html','CERTIFICADOS/diploma-mobile-first.pdf');
-let git=new Certificado('Git','CERTIFICADOS/diploma-git-github.pdf');
-let python=new Certificado('Python','CERTIFICADOS/diploma-python-basico.pdf');
-let certificadoJava=new Certificado('Java','CERTIFICADOS/estructuras_control_java.pdf');
-let certificadoRedes=new Certificado('Redes y Seguridad','CERTIFICADOS/redes_seguridad.pdf');
-let certificadoSeguridad=new Certificado('Seguridad Informática','CERTIFICADOS/seguridad_informatica.pdf');
-let certificadoCss=new Certificado('CSS','CERTIFICADOS/diploma-css-grid.pdf');
-let certificadoSql=new Certificado('SQL','CERTIFICADOS/certificado-sql.pdf');
-let certificadoReact=new Certificado('REACT.JS','CERTIFICADOS/diploma-react-vite-tailwindcss.pdf');
-listaCertificados.push(certificadoJavascript,certificadoEcmascript,certificadoApi,certificadoAsincronismo,certificadoHtml5,certificadoCss,git,python,certificadoJava,certificadoRedes,certificadoSeguridad,certificadoSql,certificadoReact);
 
-// Se adicionan nuevos proyectos
-let proyectoReact=new Proyecto('REGOT-APP','PICTURES/ots_app.png','Herramienta para registro de consumos de material en obra, Desarrollo con REACT.JS','https://github.com/Fgarcia2018/OTS_APP.git ','https://fgarcia2018.github.io/OTS_APP/');
-let proyectoBata=new Proyecto('WAREHOUSE','PICTURES/warehouse.png','Herramienta para control de inventarios, Desarrollo con HTML,CSS,JS,PHP','https://github.com/Fgarcia2018/warehouse.git ','http://fagm.epizy.com');
-let proyectoFood=new Proyecto('BEST FOOD','PICTURES/food.png','Desarrollo con HTML y CSS','https://github.com/Fgarcia2018/Restaurant.git','https://fgarcia2018.github.io/Restaurant/');
-let proyectoYard=new Proyecto('YARD SALE','PICTURES/yardsale.png','Desarrollo con HTML, CSS y JAVASCRIPT','https://github.com/Fgarcia2018/curso-frontend-developer-javascript','https://fgarcia2018.github.io/curso-frontend-developer-javascript/');
+// INSTANCIAS CERTIFICADOS
+let certificadoJavascript=new Certificado({
+    nombre:'Javascript',
+    ubicacion:'CERTIFICADOS/diploma-basico-javascript.pdf'
+    });
+let certificadoEcmascript=new Certificado({
+    nombre:'Ecmascript',
+    ubicacion:'CERTIFICADOS/diploma-ecmascript-6.pdf'
+    });
+let certificadoApi=new Certificado({
+    nombre:'Consumo API REST',
+    ubicacion:'CERTIFICADOS/diploma-api.pdf'
+    });
+let certificadoAsincronismo=new Certificado({
+    nombre:'Asincronismo con JS',
+    ubicacion:'CERTIFICADOS/diploma-asincronismo-js.pdf'
+    });
+let certificadoHtml5=new Certificado({
+    nombre:'Html',
+    ubicacion:'CERTIFICADOS/diploma-mobile-first.pdf'
+    });
+let git=new Certificado({
+    nombre:'Git',
+    ubicacion:'CERTIFICADOS/diploma-git-github.pdf'
+    });
+let python=new Certificado({
+    nombre:'Python',
+    ubicacion:'CERTIFICADOS/diploma-python-basico.pdf'
+    });
+let certificadoJava=new Certificado({
+    nombre:'Java',
+    ubicacion:'CERTIFICADOS/estructuras_control_java.pdf'
+    });
+let certificadoRedes=new Certificado({
+    nombre:'Redes y Seguridad',
+    ubicacion:'CERTIFICADOS/redes_seguridad.pdf'
+    });
+let certificadoSeguridad=new Certificado({
+    nombre:'Seguridad Informática',
+    ubicacion:'CERTIFICADOS/seguridad_informatica.pdf'
+    });
+let certificadoCss=new Certificado({
+    nombre:'CSS',
+    ubicacion:'CERTIFICADOS/diploma-css-grid.pdf'
+    });
+let certificadoSql=new Certificado({
+    nombre:'SQL',
+    ubicacion:'CERTIFICADOS/certificado-sql.pdf'
+    });
+let certificadoReact=new Certificado({
+    nombre:'REACT.JS',
+    ubicacion:'CERTIFICADOS/diploma-react-vite-tailwindcss.pdf'
+    });
+
+// SE AGREGAN CERTIFICADOS A LA LISTA
+listaCertificados.push(
+    certificadoJavascript,
+    certificadoEcmascript,
+    certificadoApi,
+    certificadoAsincronismo,
+    certificadoHtml5,
+    certificadoCss,
+    git,
+    python,
+    certificadoJava,
+    certificadoRedes,
+    certificadoSeguridad,
+    certificadoSql,
+    certificadoReact
+    );
+
+// INSTANACIAS PROYECTOS
+let proyectoReact=new Proyecto({
+    nombre:'REGOT-APP',
+    imagen:'PICTURES/ots_app.png',
+    descripcion:'Herramienta para registro de consumos de material en obra, Desarrollo con REACT.JS',
+    urlRepo:'https://github.com/Fgarcia2018/OTS_APP.git ',
+    urlApp:'https://fgarcia2018.github.io/OTS_APP/'
+    });
+let proyectoBata=new Proyecto({
+    nombre:'WAREHOUSE',
+    imagen:'PICTURES/warehouse.png',
+    descripcion:'Herramienta para control de inventarios, Desarrollo con HTML,CSS,JS,PHP',
+    urlRepo:'https://github.com/Fgarcia2018/warehouse.git ',
+    urlApp:'http://fagm.epizy.com'
+    });
+let proyectoFood=new Proyecto({
+    nombre:'BEST FOOD',
+    imagen:'PICTURES/food.png',
+    descripcion:'Desarrollo con HTML y CSS',
+    urlRepo:'https://github.com/Fgarcia2018/Restaurant.git',
+    urlApp:'https://fgarcia2018.github.io/Restaurant/'
+    });
+let proyectoYard=new Proyecto({
+    nombre:'YARD SALE',
+    imagen:'PICTURES/yardsale.png',
+    descripcion:'Desarrollo con HTML, CSS y JAVASCRIPT',
+    urlRepo:'https://github.com/Fgarcia2018/curso-frontend-developer-javascript',
+    urlApp:'https://fgarcia2018.github.io/curso-frontend-developer-javascript/'
+    });
+
+// SE AGREGAN PROYECTOS A LA LISTA
+listaProyectos.push(
+    proyectoReact,
+    proyectoBata,
+    proyectoFood,
+    proyectoYard
+    );
 
 
-listaProyectos.push(proyectoReact,proyectoBata,proyectoFood,proyectoYard);
-
-
-// Se injecta en el html los certificados
+// SE INJECTAN LOS CERTIFICADOS EN EL HTML
 listaCertificados.forEach((certificado)=>{
     lista=`<a href=${certificado.ubicacion} alt="Descargar certificado" target="_blank"><div><u>${certificado.nombre}</u><p>certificado ⬇</p></div></a>`
     contenedorCertificados.innerHTML+=lista;
 })
 
-// Se injecta en el html los proyectos
+// SE INJECTAN LOS PROYECTOS EN EL HTML
 listaProyectos.forEach((proyecto)=>{
 tarjetaProyecto=`<div class="tarjeta-proyectos">
 <figure>
