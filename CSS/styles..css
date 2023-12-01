@@ -68,8 +68,9 @@ header a{
        
 }
 .nav li:hover{
-    color: white;
+    color:black;
     background-color: aqua;
+    border-color: aqua;
     cursor:pointer;
 }
 
