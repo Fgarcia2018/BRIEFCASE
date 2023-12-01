@@ -42,6 +42,10 @@ let certificadoEcmascript=new Certificado({
     nombre:'Ecmascript',
     ubicacion:'CERTIFICADOS/diploma-ecmascript-6.pdf'
     });
+let certificadoPoo=new Certificado({
+    nombre:'POO Con Javascript',
+    ubicacion:'CERTIFICADOS/diploma-javascript-poo.pdf'
+});    
 let certificadoApi=new Certificado({
     nombre:'Consumo API REST',
     ubicacion:'CERTIFICADOS/diploma-api.pdf'
@@ -91,6 +95,7 @@ let certificadoReact=new Certificado({
 listaCertificados.push(
     certificadoJavascript,
     certificadoEcmascript,
+    certificadoPoo,
     certificadoApi,
     certificadoAsincronismo,
     certificadoHtml5,
