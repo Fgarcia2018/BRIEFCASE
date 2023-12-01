@@ -149,9 +149,12 @@ listaProyectos.push(
 
 
 // SE INJECTAN LOS CERTIFICADOS EN EL HTML
+let lista=document.createElement('ul')
+contenedorCertificados.appendChild(lista)
 listaCertificados.forEach((certificado)=>{
-    lista=`<a href=${certificado.ubicacion} alt="Descargar certificado" target="_blank"><div><u>${certificado.nombre}</u><p><img src='PICTURES/icons/download.svg' alt='Descargar'/></p></div></a>`
-    contenedorCertificados.innerHTML+=lista;
+    let enlaceCertificado=`<a href=${certificado.ubicacion} alt="Descargar certificado" target="_blank"><li><u>${certificado.nombre}</u><p><img src='PICTURES/icons/download.svg' alt='Descargar'></p></li></a>`
+    
+    lista.innerHTML+=enlaceCertificado;
 })
 
 // SE INJECTAN LOS PROYECTOS EN EL HTML

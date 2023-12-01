@@ -60,15 +60,15 @@ header a{
     margin-right: 10px;
     border-radius: 5px;
     border-style: solid;
-    border-color: gray;
-    background-color: gray;  
-    font-size: 2rem; 
+    border-color:rgba(30,75,73,1);  
+    background-color:rgba(30,75,73,1);  
+    font-size: 2rem;     
     margin-bottom: 2vw;
     text-decoration: none;
        
 }
 .nav li:hover{
-    color: aqua;
+    color: black;
     cursor:pointer;
 }
 
@@ -182,7 +182,7 @@ main{
 .tarjeta-proyectos:hover{
     box-shadow: 0 4px 8px aqua;
 }
-.contenedor-certificados{
+.contenedor-certificados ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -197,9 +197,10 @@ main{
     border-radius: 5px;
     margin: 1vh;
 }
-.contenedor-certificados div{
+.contenedor-certificados li{
     text-align: center;
-    padding: 4px 10px;;
+    padding: 4px 10px;
+    list-style: none;
 }
 .contenedor-certificados p{
     font-size: 1rem;
