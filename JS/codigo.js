@@ -150,7 +150,7 @@ listaProyectos.push(
 
 // SE INJECTAN LOS CERTIFICADOS EN EL HTML
 listaCertificados.forEach((certificado)=>{
-    lista=`<a href=${certificado.ubicacion} alt="Descargar certificado" target="_blank"><div><u>${certificado.nombre}</u><p>certificado ⬇</p></div></a>`
+    lista=`<a href=${certificado.ubicacion} alt="Descargar certificado" target="_blank"><div><u>${certificado.nombre}</u><p><img src='pictures/icons/download.svg'/></p></div></a>`
     contenedorCertificados.innerHTML+=lista;
 })
 
