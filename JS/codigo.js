@@ -1,5 +1,5 @@
 // MANIPULACION DEL DOM
-const contenedorCertificados=document.getElementById('lista-certificados');
+const contenedorCertificados=document.getElementById('lista-certificados-frontend');
 const contenedorProyectos=document.getElementById('cont-proyectos');
 
 // DECLARACIÓN DE LISTAS
@@ -62,14 +62,7 @@ let git=new Certificado({
     nombre:'Git',
     ubicacion:'CERTIFICADOS/diploma-git-github.pdf'
     });
-let python=new Certificado({
-    nombre:'Python',
-    ubicacion:'CERTIFICADOS/diploma-python-basico.pdf'
-    });
-let certificadoJava=new Certificado({
-    nombre:'Java',
-    ubicacion:'CERTIFICADOS/estructuras_control_java.pdf'
-    });
+
 let certificadoRedes=new Certificado({
     nombre:'Redes y Seguridad',
     ubicacion:'CERTIFICADOS/redes_seguridad.pdf'
@@ -81,10 +74,6 @@ let certificadoSeguridad=new Certificado({
 let certificadoCss=new Certificado({
     nombre:'CSS',
     ubicacion:'CERTIFICADOS/diploma-css-grid.pdf'
-    });
-let certificadoSql=new Certificado({
-    nombre:'SQL',
-    ubicacion:'CERTIFICADOS/certificado-sql.pdf'
     });
 let certificadoReact=new Certificado({
     nombre:'REACT.JS',
@@ -100,12 +89,9 @@ listaCertificados.push(
     certificadoAsincronismo,
     certificadoHtml5,
     certificadoCss,
-    git,
-    python,
-    certificadoJava,
+    git,      
     certificadoRedes,
-    certificadoSeguridad,
-    certificadoSql,
+    certificadoSeguridad,  
     certificadoReact
     );
 
