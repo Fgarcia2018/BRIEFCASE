@@ -35,13 +35,13 @@ header .nav li{
     justify-content: space-between;
     align-items: end
 }
-.footer-right{
+.redes-right{
     display: flex;    
 }
-.footer-right figure{
+.redes-right figure{
     margin-right: 5vw;
 }
-.footer-left p{
+.redes-left p{
     margin-left: 5vw;
 }
 

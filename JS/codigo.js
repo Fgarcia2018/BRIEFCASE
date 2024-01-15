@@ -1,4 +1,4 @@
-// MANIPULACION DEL DOM
+// DECLARACION Y ASIGNACIÓN DE CONSTANTES
 const contenedorCertificados=document.getElementById('lista-certificados-frontend');
 const contenedorProyectos=document.getElementById('cont-proyectos');
 
@@ -156,4 +156,3 @@ tarjetaProyecto=`<div class="tarjeta-proyectos">
 </div>`
 contenedorProyectos.innerHTML+=tarjetaProyecto
 });
-
