@@ -207,24 +207,43 @@ main{
     margin-top: 5vh;
     
 }
-.contenedor-certificados a{
+.contenedor-certificados .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: black;
     font-size: 2rem;
     border: 1px solid black;
     border-radius: 5px;
+    padding: 10px;
     margin: 1vh;
+    width: 251px;
+    height: 60px;
+    align-items: center;
+    transform-style:preserve-3d ;
+    position: relative;
+}
+.contenedor-certificados .card:hover{
+    transform:rotateX(180deg) ;  
+    transition: transform 1s;
+}
+.contenedor-certificados .card:not(:hover){    
+    transition: transform 1s;
+}
+ .face{     
+    position: absolute; 
+    backface-visibility:hidden;  
 }
 .contenedor-certificados li{
     text-align: center;
     padding: 4px 10px;
     list-style: none;
 }
-.contenedor-certificados p{
-    font-size: 1rem;
-}
-.contenedor-certificados a:hover{  
-    background-color: #1A6653;
+
+.contenedor-certificados .face.back{
+    font-size: 1rem;   
+    transform:rotateX(180deg) ;
 }
 
 .redes-contacto{

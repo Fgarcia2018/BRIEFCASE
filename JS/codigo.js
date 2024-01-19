@@ -15,7 +15,7 @@ class Certificado{
         this.nombre=nombre;
         this.ubicacion=ubicacion;
     }
-}
+};
 // PROTOTIPO PROYECTO
 class Proyecto{
     constructor({
@@ -31,7 +31,7 @@ class Proyecto{
     this.urlRepo=urlRepo;
     this.urlApp=urlApp;
     }    
-}
+};
 
 // INSTANCIAS CERTIFICADOS
 let certificadoJavascript=new Certificado({
@@ -138,10 +138,10 @@ listaProyectos.push(
 let lista=document.createElement('ul')
 contenedorCertificados.appendChild(lista)
 listaCertificados.forEach((certificado)=>{
-    let enlaceCertificado=`<a href=${certificado.ubicacion} alt="Descargar certificado" target="_blank"><li><u>${certificado.nombre}</u><p><img src='PICTURES/icons/download.svg' alt='Descargar'></p></li></a>`
-    
+    // let nomCertificado=document.createElement('div');
+    let enlaceCertificado=`<div class='card'><u class='face'>${certificado.nombre}</u><p ><a href=${certificado.ubicacion} alt="Descargar certificado" target="_blank"><li class='face back'><img src='PICTURES/icons/download.svg' alt='Descargar'></li></a></p></div>`    
     lista.innerHTML+=enlaceCertificado;
-})
+});
 
 // SE INJECTAN LOS PROYECTOS EN EL HTML
 listaProyectos.forEach((proyecto)=>{
