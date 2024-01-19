@@ -234,6 +234,7 @@ main{
  .face{     
     position: absolute; 
     backface-visibility:hidden;  
+    text-align: center;
 }
 .contenedor-certificados li{
     text-align: center;
