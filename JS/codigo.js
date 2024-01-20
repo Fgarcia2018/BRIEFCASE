@@ -139,7 +139,7 @@ let lista=document.createElement('ul')
 contenedorCertificados.appendChild(lista)
 listaCertificados.forEach((certificado)=>{
     // let nomCertificado=document.createElement('div');
-    let enlaceCertificado=`<div class='card'><u class='face'>${certificado.nombre}</u><p ><a href=${certificado.ubicacion} alt="Descargar certificado" target="_blank"><li class='face back'><img src='PICTURES/icons/download.svg' alt='Descargar'></li></a></p></div>`    
+    let enlaceCertificado=`<div class='card'><u class='face'>${certificado.nombre}</u><p ><a href=${certificado.ubicacion} alt="Descargar Certificado ${certificado.nombre}" target="_blank"><li class='face back'><img src='PICTURES/icons/download.svg' alt='Descargar'></li></a></p></div>`    
     lista.innerHTML+=enlaceCertificado;
 });
 
