@@ -33,7 +33,7 @@ header{
         align-items: center;
         justify-items: end;
 }
-header h1,h2{
+header h1, header h2{
     grid-area: t1;
     padding-left: 12vw;
 }
@@ -95,6 +95,7 @@ main{
     height: auto;
     align-items: center;    
 }
+
 .section-main:nth-child(even){
     background-color:whitesmoke;
     color: black;
