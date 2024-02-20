@@ -1,19 +1,15 @@
 main{
     width: 100%;
 }
-
 header h1{
     font-size: 7.5rem;
 }
-#header-foto{
-    grid-area: t3;
-    margin-right: 44vh;
-}
-header .nav li{
+nav li{
     margin-right: 5px;
 }
 .tarjeta-proyectos{  
-    width: 25vw;
+    width: 35vw;
+    margin: 2vw;
 }
 footer{
     width: 100%;

@@ -17,66 +17,61 @@ html{
     font-family: 'Inconsolata', monospace;    
 }
 body{   
+    display: flex;
+    flex-direction: column;
     background-color: var(--secundary-backcolor);
     width: 100%;  
 }
 header{
         width: 100%;
         height: 100vh; 
-        background: linear-gradient(207.8deg, aqua 0%, var(--primary-backcolor) 45%);
+        background-blend-mode: hard-light;
+        background: linear-gradient(207.8deg, aqua 0%, var(--primary-backcolor) 45%),url('../PICTURES/fondo.jpg');        
+        background-repeat: no-repeat;
+        background-size: cover;                
         font-size: 1.6rem;       
-        display: grid;
-        grid-template-columns: 60vw 40vw;
-        grid-template-rows: 50vh 50vh;        
-        grid-template-areas: "t1 t2"
-        "t1 t3";    
-        align-items: center;
-        justify-items: end;
+        display: flex;
+        flex-wrap: wrap;
 }
-header h1, header h2{
-    grid-area: t1;
-    padding-left: 12vw;
+header div{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    margin-bottom: 2px;
+
+    padding: auto;
 }
-header h2{
-    margin-top: 20vh;
+header h1, header h2{ 
+    width: 100%;    
+    text-align: center;   
 }
 #header-foto{
     width: 181px;
     height: 200px;
     border-radius: 100px;
-    grid-area: t1;
-    margin-top: 5vh;
-    margin-top: -48vh;
+    margin-top: 5vh;   
 }
-header .nav{   
+nav{   
     right: 20px;
-    text-align: center;  
-    grid-area: t3;  
-    margin-top: 20vh;
-    width: 130px;
-    margin: 164px 2px 20px 0px;
+    text-align: center;      
+    margin-top: 70vh;
+    width: 130px;  
+    margin-bottom: 2vh ;
     position: fixed;
-    align-self: end;
 }
-
-header a{
-    text-decoration: none;
-    color: white;
-}
-
-.nav li{
+nav li{
     display: inline-block;
     margin-right: 10px;
     border-radius: 5px;
     border-style: solid;
     border-color:rgba(30,75,73,1);  
-    background-color:rgba(30,75,73,1);  
+    background-color:rgba(30,75,73,1);
+    color: white;  
     font-size: 2rem;     
     margin-bottom: 2vw;
     text-decoration: none;
-       
 }
-.nav li:hover{
+nav li:hover{
     color:black;
     background-color: aqua;
     border-color: aqua;
@@ -111,18 +106,12 @@ main{
     margin-top: 10vh;
 }
 
-.tarjeta-proyectos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5fr;
-    grid-template-areas: "img img"
-    "img img"
-    "img img"
-    "desc desc"
-    "repo app";
+.tarjeta-proyectos{   
+    display: flex;
+    flex-direction: column;
     height: auto;
     border-radius: 5px;
-    margin: 5px;      
+    margin: 2vw;      
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0,0,0.16); 
@@ -132,14 +121,13 @@ main{
     font-size: 1.5rem;
 
 }
-.tarjeta-proyectos figure{
-    grid-area: img;
+.tarjeta-proyectos figure{  
     text-align: center;    
 }
 .tarjeta-proyectos img{
     width: 300px;    
     height: 500px;
-    object-fit:contain
+    object-fit:contain; 
 }
 
 .tarjeta-proyectos p{
@@ -160,13 +148,14 @@ main{
     grid-area: app;
 }
 
-.tarjeta-proyectos a{
+.tarjeta-proyectos a{    
+    height: auto;
+    background-color: #2D9596 ;
     text-decoration: none;
     color: white;
-    justify-self: center;
-    border: 1px solid white;
+    border: none;
     margin-top: 2vh;
-    padding:0 10px 0 10px;
+    padding:5px;
 }
 .tarjeta-proyectos a:hover{
     cursor: pointer;     
@@ -285,3 +274,28 @@ footer{
     text-align: center;
     font-size: 1.2rem;
 }
+
+/* PAGEVIDEO */
+
+#contenedor-videos-demo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 90vw;
+    height:auto;
+}  
+.video-demo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vw;
+    margin-top: 50px;
+}      
+video{
+    width: 100%;
+    height: 90%;
+    margin-top: 10px;
+}        

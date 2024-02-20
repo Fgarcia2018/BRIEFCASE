@@ -1,9 +1,9 @@
 header h1{
     font-size: 4.5rem;
 }
-header .nav{
-    width: 470px;
-    margin: 2px 0px 42px 3px;
+nav{
+    width: 500px;
+    margin-top: 90vh;
     height: 1vh;
 }
 
@@ -24,11 +24,10 @@ header .nav li{
     align-items: center;   
     padding: 3vh 5vw 3vh 5vw;
     margin-top: 15vh;
-    margin-bottom: 25vh;
-    
+    margin-bottom: 25vh;    
 }
 .tarjeta-proyectos{  
-    width: 40vw;
+    width: 50vw;
 }
 .redes-contacto{
     flex-direction: row;
