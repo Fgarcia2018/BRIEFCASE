@@ -10,7 +10,7 @@ let proyectoReact=new Proyecto({
     urlRepo:'https://github.com/Fgarcia2018/OTS_APP.git ',
     urlApp:'https://fgarcia2018.github.io/OTS_APP/',
     urlDemo:'PAGES/pagevideo.html',
-    video:'../VIDEOS/OTS_APP.mp4'
+    video:'../VIDEOS/OTSAPP.mp4'
     });
 let proyectoBata=new Proyecto({
     nombre:'WAREHOUSE',
@@ -19,7 +19,7 @@ let proyectoBata=new Proyecto({
     urlRepo:'https://github.com/Fgarcia2018/warehouse.git ',
     urlApp:'http://fagm.epizy.com',
     urlDemo:'PAGES/pagevideo.html',
-    video:''
+    video:'../VIDEOS/WAREHOUSE.mp4'
     });
 let proyectoShop=new Proyecto({
     nombre:'SHOPTEMPLATE',
@@ -28,7 +28,7 @@ let proyectoShop=new Proyecto({
     urlRepo:'https://github.com/Fgarcia2018/shoptemplate.git',
     urlApp:'https://fgarcia2018.github.io/shoptemplate/',
     urlDemo:'PAGES/pagevideo.html',
-    video:''
+    video:'../VIDEOS/SHOPTEMPLATE.mp4'
     });
 let proyectoYard=new Proyecto({
     nombre:'YARD SALE',
@@ -43,10 +43,10 @@ let proyectoYard=new Proyecto({
 
 // SE AGREGAN PROYECTOS A LA LISTA
  listaProyectos.push(
+    proyectoShop,
     proyectoReact,
     proyectoBata,
-    proyectoShop,
-    proyectoYard
+      
     );
 
     export class ListaProyectos{
