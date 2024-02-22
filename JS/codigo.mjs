@@ -24,11 +24,11 @@ let proyectos=new ListaProyectos();
 
 proyectos.lista.forEach((proyecto)=>{
 let tarjetaProyecto=`<div class="tarjeta-proyectos">
+    <h4>${proyecto.nombre}</h4>
 <figure>
     <img src=${proyecto.imagen} alt=${proyecto.nombre}>
-    <figcaption>${proyecto.nombre}</figcaption>
+    <figcaption>${proyecto.descripcion}</figcaption>
 </figure>
-<P>${proyecto.descripcion}</P>
 <a href=${proyecto.urlDemo+'#'+proyecto.nombre} class="enlace-demo" target="_blank">Ver Demo</a>
 <a href=${proyecto.urlRepo} class="enlace-repo" target="_blank">Ir a Repositorio</a>
 <a href=${proyecto.urlApp} class="enlace-page" target="_blank">visitar el sitio</a>
