@@ -1,6 +1,17 @@
-
+header{  
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+header div{
+    width: auto;    
+}
 header h1{
     font-size: 4.5rem;
+}
+
+#header-foto{
+    margin-top: 5vh;
 }
 nav{
     width: 500px;
