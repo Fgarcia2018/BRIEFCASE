@@ -49,6 +49,10 @@ let certificadoReact=new Certificado({
     nombre:'REACT.JS',
     ubicacion:'CERTIFICADOS/diploma-react-vite-tailwindcss.pdf'
     });
+    let certificadoSass=new Certificado({
+        nombre:'SASS',
+        ubicacion:'CERTIFICADOS/diploma-sass.pdf'
+        });    
 
 // SE AGREGAN CERTIFICADOS A LA LISTA
 listaCertificados.push(
@@ -62,7 +66,8 @@ listaCertificados.push(
     git,      
     certificadoRedes,
     certificadoSeguridad,  
-    certificadoReact
+    certificadoReact,
+    certificadoSass
     );
    
     export class ListaCertificados{
