@@ -15,7 +15,7 @@ let proyectoReact=new Proyecto({
 let proyectoBata=new Proyecto({
     nombre:'WAREHOUSE',
     imagen:'PICTURES/warehouse.png',
-    descripcion:'Herramienta para control de inventarios, Desarrollo con HTML,CSS,JS,PHP',
+    descripcion:'Herramienta para control de inventarios, Desarrollo backend, frontend con HTML,CSS,JS,PHP. Base de datos con MYSQL',
     urlRepo:'https://github.com/Fgarcia2018/warehouse.git ',
     urlApp:'http://fagm.epizy.com',
     urlDemo:'PAGES/pagevideo.html',
@@ -24,7 +24,7 @@ let proyectoBata=new Proyecto({
 let proyectoShop=new Proyecto({
     nombre:'SHOPTEMPLATE',
     imagen:'PICTURES/shoptemplate.png',
-    descripcion:'Desarrollo de plantilla para venta de servicios, utilizando REACT JS',
+    descripcion:'Desarrollo de plantilla para agendamiento de servicios, utilizando REACT JS',
     urlRepo:'https://github.com/Fgarcia2018/shoptemplate.git',
     urlApp:'https://fgarcia2018.github.io/shoptemplate/',
     urlDemo:'PAGES/pagevideo.html',
