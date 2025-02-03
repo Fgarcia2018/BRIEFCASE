@@ -1,4 +1,4 @@
-import {ListaProyectos} from '../JS/ListaProyectos.mjs'
+import {ListaProyectos} from './ListaProyectos.mjs'
 const contenedorVideos=document.getElementById('contenedor-videos-demo');
 
 let proyectos=new ListaProyectos();
