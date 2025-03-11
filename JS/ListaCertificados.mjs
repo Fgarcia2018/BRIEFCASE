@@ -49,10 +49,18 @@ let certificadoReact=new Certificado({
     nombre:'REACT.JS',
     ubicacion:'CERTIFICADOS/diploma-react-vite-tailwindcss.pdf'
     });
-    let certificadoSass=new Certificado({
-        nombre:'SASS',
-        ubicacion:'CERTIFICADOS/diploma-sass.pdf'
-        });    
+let certificadoSass=new Certificado({
+    nombre:'SASS',
+    ubicacion:'CERTIFICADOS/diploma-sass.pdf'
+    });    
+let certificadoRedesI=new Certificado({
+    nombre:'Redes De Internet',
+    ubicacion:'CERTIFICADOS/diploma-redes.pdf'
+    });     
+let certificadoNube=new Certificado({
+    nombre:'Introducción A La Nube',
+    ubicacion:'CERTIFICADOS/diploma-intro-nube.pdf'
+    });      
 
 // SE AGREGAN CERTIFICADOS A LA LISTA
 listaCertificados.push(
@@ -67,7 +75,9 @@ listaCertificados.push(
     certificadoRedes,
     certificadoSeguridad,  
     certificadoReact,
-    certificadoSass
+    certificadoSass,
+    certificadoRedesI,
+    certificadoNube
     );
    
     export class ListaCertificados{
