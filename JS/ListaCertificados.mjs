@@ -60,7 +60,11 @@ let certificadoRedesI=new Certificado({
 let certificadoNube=new Certificado({
     nombre:'Introducción A La Nube',
     ubicacion:'CERTIFICADOS/diploma-intro-nube.pdf'
-    });      
+    });   
+let certificadoIOT=new Certificado({
+    nombre:'Internet De Las Cosas',
+    ubicacion:'CERTIFICADOS/INTERNET DE LAS COSAS.pdf'
+    });        
 
 // SE AGREGAN CERTIFICADOS A LA LISTA
 listaCertificados.push(
@@ -77,7 +81,8 @@ listaCertificados.push(
     certificadoReact,
     certificadoSass,
     certificadoRedesI,
-    certificadoNube
+    certificadoNube,
+    certificadoIOT
     );
    
     export class ListaCertificados{
