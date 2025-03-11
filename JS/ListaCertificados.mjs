@@ -63,7 +63,7 @@ let certificadoNube=new Certificado({
     });   
 let certificadoIOT=new Certificado({
     nombre:'Internet De Las Cosas',
-    ubicacion:'CERTIFICADOS/INTERNET DE LAS COSAS.pdf'
+    ubicacion:'CERTIFICADOS/INTERNET-DE-LAS-COSAS.pdf'
     });        
 
 // SE AGREGAN CERTIFICADOS A LA LISTA
