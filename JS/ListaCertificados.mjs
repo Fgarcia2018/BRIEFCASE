@@ -68,7 +68,11 @@ let certificadoIOT=new Certificado({
 let certificadoSql=new Certificado({
         nombre:'Diseño De BD Con SQL',
         ubicacion:'CERTIFICADOS/certificado-sql.pdf'
-        });           
+        });  
+let certificadoSqa=new Certificado({
+            nombre:'SQA',
+            ubicacion:'CERTIFICADOS/Certificado-sqa.pdf'
+            });          
 
 // SE AGREGAN CERTIFICADOS A LA LISTA
 listaCertificados.push(
@@ -87,7 +91,8 @@ listaCertificados.push(
     certificadoRedesI,
     certificadoNube,
     certificadoIOT,
-    certificadoSql
+    certificadoSql,
+    certificadoSqa
     );
    
     export class ListaCertificados{
