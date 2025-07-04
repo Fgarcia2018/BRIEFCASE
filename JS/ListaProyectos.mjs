@@ -17,7 +17,7 @@ let proyectoBata=new Proyecto({
     imagen:'PICTURES/warehouse.png',
     descripcion:'Herramienta para control de inventarios, Desarrollo backend, frontend con HTML,CSS,JS,PHP. Base de datos con MYSQL',
     urlRepo:'https://github.com/Fgarcia2018/warehouse.git ',
-    urlApp:'http://fagm.epizy.com',
+    urlApp:'https://warehouseproject.wuaze.com',
     urlDemo:'PAGES/pagevideo.html',
     video:'../VIDEOS/WAREHOUSE.mp4'
     });
