@@ -72,7 +72,12 @@ let certificadoSql=new Certificado({
 let certificadoSqa=new Certificado({
             nombre:'SQA',
             ubicacion:'CERTIFICADOS/Certificado-sqa.pdf'
-            });          
+            });     
+   
+let certificadoOffice365=new Certificado({
+            nombre:'office365',
+            ubicacion:'CERTIFICADOS/administracion_servicios_office365.pdf'
+            });                  
 
 // SE AGREGAN CERTIFICADOS A LA LISTA
 listaCertificados.push(
@@ -92,7 +97,8 @@ listaCertificados.push(
     certificadoNube,
     certificadoIOT,
     certificadoSql,
-    certificadoSqa
+    certificadoSqa,
+    certificadoOffice365
     );
    
     export class ListaCertificados{
