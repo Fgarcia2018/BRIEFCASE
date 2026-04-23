@@ -22,11 +22,11 @@ let proyectoBata=new Proyecto({
     video:'../VIDEOS/WAREHOUSE.mp4'
     });
 let proyectoShop=new Proyecto({
-    nombre:'SHOPTEMPLATE',
-    imagen:'PICTURES/shoptemplate.png',
-    descripcion:'Desarrollo de plantilla para agendamiento de servicios, utilizando REACT JS',
-    urlRepo:'https://github.com/Fgarcia2018/shoptemplate.git',
-    urlApp:'https://fgarcia2018.github.io/shoptemplate/',
+    nombre:'TIENDAPP',
+    imagen:'PICTURES/Tienda.png',
+    descripcion:'Desarrollo de app para venta de productos, utilizando REACT JS',
+    urlRepo:'https://github.com/Fgarcia2018/tienda/',
+    urlApp:'https://tienda.servidev.com',
     urlDemo:'PAGES/pagevideo.html',
     video:'../VIDEOS/SHOPTEMPLATE.mp4'
     });
